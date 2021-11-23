@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -5,7 +6,7 @@ import { I18nProvider, LOCALES } from './i18n'
 import { FormattedMessage } from 'react-intl';
 
 import translate from './i18n/translate';
-import { useState } from 'react';
+import Report from './report';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           >
             Learn React
           </a>
+          <Report />
           <hr />
           <button onClick={() => setLocale(LOCALES.ENGLISH)}>ENGLISH</button>
           <button onClick={() => setLocale(LOCALES.FRENCH)}>FRENCH</button>
