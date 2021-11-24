@@ -1,7 +1,7 @@
 import { LOCALES } from "../constant"
 
 export default {
-    [LOCALES.ENGLISH]: {
+    [LOCALES.GERMAN]: {
         'hello': 'Hallo message',
     }
 }
