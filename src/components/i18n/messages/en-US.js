@@ -4,6 +4,7 @@ export default {
     [LOCALES.ENGLISH]: {
         'hello': 'Hello message',
         salute: 'Hi {name}, Subscribe my Youtube channel.',
+        richtext: 'I have <bold>{num, plural, one {# dog} other {# dogs}}</bold>',
         // 'menu': {
             // 'home': 'Home',
             // 'about': 'About me',
@@ -19,6 +20,9 @@ export default {
         form: {
             name: {
                 placeholder: 'Put your name...'
+            },
+            dogs: {
+                placeholder: 'How many dogs you have?',
             },
             select: {
                 us: 'United States',
