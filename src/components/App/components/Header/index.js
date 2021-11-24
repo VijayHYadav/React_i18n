@@ -1,4 +1,5 @@
 import { FormattedMessage } from "react-intl";
+import "./style.css";
 
 const Header = () => {
 
@@ -9,17 +10,19 @@ const Header = () => {
         'contacts': 'https://site.com/contacts',
     }
     return (
-        <nav>
-            <ul>
-                {Object.keys(menu).map(key => (
-                    <li key={key}>
-                        <a href={menu[key]}>
-                            <FormattedMessage id={`${key}`} />
-                        </a>
-                    </li>
-                ))}
-            </ul>
-        </nav>
+        <header className="App-header">
+            <nav>
+                <ul>
+                    {Object.keys(menu).map(key => (
+                        <li key={key}>
+                            <a href={menu[key]}>
+                                <FormattedMessage id={`${key}`} />
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+        </header>
     )
 };
 
