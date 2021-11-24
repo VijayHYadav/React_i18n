@@ -1,8 +1,11 @@
 import App from './App';
 import Provider from './Provider';
+import {AppContextProvider} from './Context';
 
 export default () => (
-    <Provider>
-        <App />
-    </Provider>
+    <AppContextProvider>
+        <Provider>
+            <App />
+        </Provider>
+    </AppContextProvider>
 );
