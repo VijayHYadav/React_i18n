@@ -1,4 +1,5 @@
 import { useContext, useCallback } from 'react';
+import { saveToStorage } from '../../../../utils/localeStorage';
 import { AppContext } from '../../../Context'
 import { LOCALES } from '../../../i18n/constant';
 
@@ -11,7 +12,9 @@ const Footer = () => {
         dispatch({
             type: 'setLocale',
             locale
-        })
+        });
+
+        saveToStorage('locale', locale)
     }, []);
 
     return (
