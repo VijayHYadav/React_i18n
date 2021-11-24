@@ -4,10 +4,10 @@ export default {
     [LOCALES.FRENCH]: {
         'hello': 'Bonjour message',
         menu: {
-            home: '',
-            about: '',
-            blog: '',
-            contacts: '',
+            'home': 'Domicile',
+            'about': 'À propos',
+            'blog': 'Blog',
+            'contacts': 'Contacts',
         }
     }
 }
