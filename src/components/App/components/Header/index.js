@@ -16,7 +16,7 @@ const Header = () => {
                     {Object.keys(menu).map(key => (
                         <li key={key}>
                             <a href={menu[key]}>
-                                <FormattedMessage id={`${key}`} />
+                                <FormattedMessage id={`menu.${key}`} />
                             </a>
                         </li>
                     ))}
