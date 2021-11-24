@@ -3,6 +3,7 @@ import { LOCALES } from "../constant"
 export default {
     [LOCALES.ENGLISH]: {
         'hello': 'Hello message',
+        salute: 'Hi {name}, Subscribe my Youtube channel.',
         // 'menu': {
             // 'home': 'Home',
             // 'about': 'About me',
