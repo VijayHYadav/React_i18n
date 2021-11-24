@@ -2,6 +2,8 @@ import { FormattedMessage } from 'react-intl';
 import translate from '../../../i18n/translate';
 import { useState } from 'react';
 
+const Link = ({href, text}) => <a href={href}>{text}</a>;
+
 const Form = () => {
 
     const [name, setName] = useState('');
@@ -43,7 +45,7 @@ const Form = () => {
 
                     <FormattedMessage
                         id="richtext"
-                        values={{num: dogs, bold: chunks => <b>{chunks}</b>}}
+                        values={{num: dogs, bold: chunks => <Link href={"https://site.com"} text={chunks} />}}
                     />
 
                     <FormattedMessage id="form.dogs.placeholder">
