@@ -14,6 +14,11 @@ export default {
             'about': 'About me',
             'blog': 'Site blog',
             'contacts': 'contacts',
+        },
+        form: {
+            name: {
+                placeholder: 'Put your name...'
+            }
         }
     }
 }
