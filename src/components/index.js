@@ -1,3 +1,8 @@
 import App from './App';
+import Provider from './Provider';
 
-export default App;
+export default () => (
+    <Provider>
+        <App />
+    </Provider>
+);

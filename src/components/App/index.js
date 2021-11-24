@@ -1,3 +1,4 @@
+import { FormattedMessage } from 'react-intl';
 import './style.css';
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
   return (
       <div className="App">
         <header className="App-header">
-          app
+          <FormattedMessage id="hello" />
         </header>
       </div>
   );
