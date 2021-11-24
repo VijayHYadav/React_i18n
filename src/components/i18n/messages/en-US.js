@@ -18,6 +18,12 @@ export default {
         form: {
             name: {
                 placeholder: 'Put your name...'
+            },
+            select: {
+                us: 'United States',
+                french: 'French',
+                ukraine: 'Ukraine',
+                other: 'Other'
             }
         }
     }

@@ -11,6 +11,25 @@ const Form = () => {
                     name="name" />}
             </FormattedMessage>
 
+            <select>
+
+                <FormattedMessage id="form.select.us">
+                    {placeholder => <option value={1}>{placeholder}</option>}
+                </FormattedMessage>
+
+                <FormattedMessage id="form.select.french">
+                    {placeholder => <option value={1}>{placeholder}</option>}
+                </FormattedMessage>
+
+                <FormattedMessage id="form.select.ukraine">
+                    {placeholder => <option value={1}>{placeholder}</option>}
+                </FormattedMessage>
+
+                <FormattedMessage id="form.select.other">
+                    {placeholder => <option value={1}>{placeholder}</option>}
+                </FormattedMessage>
+
+            </select>
         </form>
     )
 }
